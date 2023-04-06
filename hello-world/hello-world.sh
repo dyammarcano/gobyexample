@@ -1,19 +1,3 @@
-# Go by Example: Hello World
-
-```go
-// Our first program will print the classic "hello world"
-// message. Here's the full source code.
-package main
-
-import "fmt"
-
-func main() {
-	fmt.Println("hello world")
-}
-
-```
-
-```bash
 # To run the program, put the code in `hello-world.go` and
 # use `go run`.
 $ go run hello-world.go
@@ -31,4 +15,3 @@ hello world
 
 # Now that we can run and build basic Go programs, let's
 # learn more about the language.
-```
