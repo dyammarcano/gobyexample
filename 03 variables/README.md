@@ -1,26 +1,40 @@
 # Go by Example: Variables
 
 ```go
+// In Go, _variables_ are explicitly declared and used by
+// the compiler to e.g. check type-correctness of function
+// calls.
+
 package main
 
 import "fmt"
 
 func main() {
 
-    var a = "initial"
-    fmt.Println(a)
+	// `var` declares 1 or more variables.
+	var a = "initial"
+	fmt.Println(a)
 
-    var b, c int = 1, 2
-    fmt.Println(b, c)
+	// You can declare multiple variables at once.
+	var b, c int = 1, 2
+	fmt.Println(b, c)
 
-    var d = true
-    fmt.Println(d)
+	// Go will infer the type of initialized variables.
+	var d = true
+	fmt.Println(d)
 
-    var e int
-    fmt.Println(e)
+	// Variables declared without a corresponding
+	// initialization are _zero-valued_. For example, the
+	// zero value for an `int` is `0`.
+	var e int
+	fmt.Println(e)
 
-    f := "apple"
-    fmt.Println(f)
+	// The `:=` syntax is shorthand for declaring and
+	// initializing a variable, e.g. for
+	// `var f string = "apple"` in this case.
+	// This syntax is only available inside functions.
+	f := "apple"
+	fmt.Println(f)
 }
 ```
 
@@ -32,3 +46,7 @@ true
 0
 apple
 ```
+
+### Run example
+
+[Example](https://goplay.tools/snippet/yzDL6T7sxIO)

@@ -32,3 +32,7 @@ hello world
 # Now that we can run and build basic Go programs, let's
 # learn more about the language.
 ```
+
+### Run example
+
+[Example](https://goplay.tools/snippet/NeviD0awXjt)
