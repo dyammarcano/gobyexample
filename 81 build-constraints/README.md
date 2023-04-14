@@ -4,14 +4,12 @@ In Go, build constraints are special comments that can be used to control which 
 Here's an example of build constraints in Go:
 
 ```go
-// +build linux
+//go:build !windows
 
 package main
 
-import "fmt"
-
-func main() {
-    fmt.Println("Hello, Linux!")
+func message() string {
+	return "Hello, non-Windows!"
 }
 ```
 
