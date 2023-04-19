@@ -60,11 +60,11 @@ To run the example, simply type:
 ```bash
 go test -bench=. -benchmem
 
-goos: windows
+goos: linux
 goarch: amd64
 pkg: gobyexample/examples/waygroup
-cpu: Intel(R) Core(TM)2 Duo CPU     E8400  @ 3.00GHz
-BenchmarkMutexCounter
-BenchmarkMutexCounter-2             2010            606855 ns/op
+cpu: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
+BenchmarkMutexCounter-2             3782            318478 ns/op             636 B/op         15 allocs/op
 PASS
+ok      gobyexample/examples/waygroup   1.242s
 ```

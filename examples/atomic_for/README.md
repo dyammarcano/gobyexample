@@ -47,11 +47,11 @@ To run the example, simply type:
 ```bash
 go test -bench=. -benchmem
 
-goos: windows
+goos: linux
 goarch: amd64
 pkg: gobyexample/examples/atomic_for
-cpu: Intel(R) Core(TM)2 Duo CPU     E8400  @ 3.00GHz
-BenchmarkAtomic
-BenchmarkAtomic-2              1        1173798100 ns/op
+cpu: Intel(R) Xeon(R) Platinum 8272CL CPU @ 2.60GHz
+BenchmarkAtomic-2              1        1003212885 ns/op            6744 B/op         55 allocs/op
 PASS
+ok      gobyexample/examples/atomic_for 1.017s
 ```
