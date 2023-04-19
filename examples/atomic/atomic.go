@@ -14,7 +14,8 @@ type ServerConn struct {
 
 func main() {
 	p := atomic.Pointer[ServerConn]{}
-	s := ServerConn{ID: "first_conn"}
+	s := ServerConn{ID: "first_conn", Open: true}
+
 	p.Store(&s)
 	fmt.Println(p.Load()) // Will display value stored.
 }
